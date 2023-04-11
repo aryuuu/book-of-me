@@ -36,6 +36,11 @@ mdBook will create a directory with this following files for you
 
 ```
 
+You can run this command to serve your project on local machine 
+```sh
+mdbook serve
+```
+
 The next step for me is to make some adjustments to `book.toml`.
 
 I didn't want the print icon on the top right so I added this line
@@ -74,4 +79,20 @@ Okay, now I guess it is time to do something that actually matters--writing some
 
 ## Deploying Using Netlify
 
+Sweet, now I need to make this site accessible for my readers, all 2 of them.
 
+The first option that came to mind is [Netlify](https://www.netlify.com/), I have used it in the past and there is a free tier, so I created new project in Netlify and connect it to this repo.
+
+We need to build this project first before deploying it and for that we need `mdbook` to be installed on Netlify's CI.
+
+Conveniently mdBook provided pre-built binaries for each of their release, so we can just download that.
+
+I added this as the build command for my Netlify project, adjust the binary version to suit your need.
+
+```sh
+curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.25/mdbook-v0.4.25-x86_64-unknown-linux-gnu.tar.gz | tar xvz && ./mdbook build 
+```
+
+I also need to set the `publish directory` to `book` or whatever you configure the output directory to be.
+
+Now the deployment will automatically triggered when you push your changes to your repository.
