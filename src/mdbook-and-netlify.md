@@ -96,3 +96,8 @@ curl -L https://github.com/rust-lang/mdBook/releases/download/v0.4.25/mdbook-v0.
 I also need to set the `publish directory` to `book` or whatever you configure the output directory to be.
 
 Now the deployment will automatically triggered when you push your changes to your repository.
+
+### References
+
+- [mdBook docs](https://rust-lang.github.io/mdBook/index.html)
+- [Using mdBook in Netlify](https://github.com/rust-lang/mdBook/issues/1191#issuecomment-614049886)
