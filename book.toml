@@ -4,3 +4,10 @@ language = "en"
 multilingual = false
 src = "src"
 title = "aryuuu.com"
+
+[output.html]
+default-theme = "navy"
+git-repository-url = "https://github.com/aryuuu/book-of-me"
+
+[output.html.print]
+enable = false
