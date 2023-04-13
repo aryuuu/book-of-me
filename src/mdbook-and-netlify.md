@@ -1,5 +1,9 @@
 # Personal Website with mdBook and Netlify 
 
+04/11/2023
+
+---
+
 I think it is only fitting if I write this as the first article on this site.
 
 Prior to this I already have a personal website that I also host using [Netlify](https://www.netlify.com/) but using a different template that I forked from [bchiang/v4](https://github.com/bchiang7/v4).
